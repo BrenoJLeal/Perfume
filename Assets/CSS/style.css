@@ -1,0 +1,123 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Dark-Cyan: hsl(158, 36%, 37%);
+    --Cream:hsl(30, 38%, 92%);
+    --Very-Dark-Blue: hsl(212, 21%, 14%);
+    --Dark-Grayish-Blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Fontes/Montserrat-VariableFont_wght.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../Fontes/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf) format('opentype');
+}
+body{
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+}
+.anuncio{
+    background-color: var(--White);
+    padding: 32px;
+    border-radius: 0px 10px 10px 0px;
+}
+.anuncio .perfume{
+    color: var(--Dark-Grayish-Blue);
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    width: 92px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.anuncio .nomeP{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 20px;
+    text-align: left;
+    color: var(--Very-Dark-Blue);
+}
+.anuncio .descricao{
+    margin-top: 24px;
+    color: var(--Dark-Grayish-Blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+
+}
+.anuncio .nomeP, .desconto{
+    font-family: 'Fraunces', serif;
+}
+.valores{
+    display: flex;
+    align-items: center; 
+}
+.anuncio .valorT{
+    margin-top: 29px;
+    text-decoration:line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 500;
+    line-height: 23px;
+    margin-left: 19px;
+    text-align: left;
+}
+.anuncio .desconto{
+    color: var(--Dark-Cyan);
+    margin-top: 29px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.btn{
+    display: flex;
+    background-color: var(--Dark-Cyan);
+    color: var(--White);
+    border: none;
+    margin: auto;
+    margin-top: 30px;
+    width: 236px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    cursor: pointer;
+}
+.cart{
+    margin-right: 10px;
+    height: 16px;
+    width: 14px;
+}
+.foto{
+    margin: 0%;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
